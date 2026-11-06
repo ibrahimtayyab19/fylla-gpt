@@ -1,0 +1,21 @@
+{
+  "name": "fylla-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/styles.scss dist/styles.css --style=expanded --no-source-map",
+    "watch": "sass --watch src/styles.scss:dist/styles.css",
+    "format": "prettier --write dist/index.html src/styles.scss dist/script.js README.md package.json .prettierrc.json",
+    "format:check": "prettier --check dist/index.html src/styles.scss dist/script.js README.md package.json .prettierrc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "sass": "^1.108.0"
+  },
+  "private": true
+}

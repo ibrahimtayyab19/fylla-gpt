@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Fylla — a digital agency from Lisbon. Branding, design, and creative digital solutions."
+    />
+    <title>FYLLA — Digital Agency from Lisbon</title>
+    <link rel="icon" href="assets/svg12688193849.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="assets/syne.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <div class="page" id="home">
+      <!-- Header: desktop navigation, theme switch, and mobile menu -->
+      <header class="header">
+        <a class="logo" href="#home" aria-label="Fylla home"
+          ><img
+            class="logo-mark"
+            src="assets/svg12688193849.svg"
+            alt=""
+            aria-hidden="true" /><img
+            class="logo-word"
+            src="assets/svg11433201360.svg"
+            alt=""
+            aria-hidden="true"
+        /></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#services">Services</a><a href="#work">Work</a
+          ><a href="#studio">Studio</a><a href="#news">Blog</a>
+          <div class="pages-menu">
+            <button class="pages-toggle" aria-expanded="false">Pages⌄</button>
+            <div class="dropdown">
+              <a href="#home">Home</a><a href="#services">Services</a
+              ><a href="#studio">Studio</a><a href="#contact">Contact</a>
+            </div>
+          </div>
+          <a class="button" href="#contact">Let’s Talk</a>
+        </nav>
+        <span class="nav-divider"></span>
+        <div class="socials">
+          <a href="https://www.instagram.com/" aria-label="Instagram">IN</a
+          ><a href="https://www.pinterest.com/" aria-label="Pinterest">PI</a
+          ><a href="https://www.twitter.com/" aria-label="Twitter">TW</a>
+        </div>
+        <span class="nav-divider"></span
+        ><button
+          class="theme-toggle"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          aria-label="Dark mode"
+        >
+          <span class="theme-knob" aria-hidden="true">☀</span></button
+        ><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a href="#services">Services</a><a href="#work">Work</a
+          ><a href="#studio">Studio</a><a href="#news">Blog</a
+          ><a href="#contact">Contact</a
+          ><button
+            class="theme-toggle"
+            type="button"
+            role="switch"
+            aria-checked="false"
+            aria-label="Dark mode"
+          >
+            <span class="theme-knob" aria-hidden="true">☀</span>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <!-- Hero: introduction and background video -->
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="hero-text">
+              <h1>We are a<br />digital agency<br />from Lisbon.</h1>
+              <p>
+                Elevating brands through creative digital solutions, proudly representing
+                Lisbon's vibrant innovation.
+              </p>
+            </div>
+            <img
+              class="hero-symbol"
+              src="assets/svg449628575.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="hero-media">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              webkit-playsinline
+              preload="auto"
+              poster="assets/hero-poster.jpg"
+              aria-label="Creative team working together"
+            >
+              <source src="assets/hero-silent.mp4" type="video/mp4" />
+              <source src="assets/hero.webm" type="video/webm" /></video
+          </div>
+        </section>
+
+        <!-- Clients: duplicated logo groups for the seamless marquee -->
+        <section class="clients" aria-label="Our clients">
+          <p class="eyebrow">Our Clients</p>
+          <div class="client-logos">
+            <div class="marquee-track">
+              <div class="marquee-group">
+                <img
+                  class="client-logo"
+                  src="assets/svg9847854158.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg11135453979.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg11530193546.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg10440407616.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg12331806652.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg11781321574.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="marquee-group" aria-hidden="true">
+                <img
+                  class="client-logo"
+                  src="assets/svg9847854158.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg11135453979.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg11530193546.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg10440407616.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg12331806652.svg"
+                  alt=""
+                  aria-hidden="true"
+                /><img
+                  class="client-logo"
+                  src="assets/svg11781321574.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services: two flex rows with card dividers -->
+        <section class="services split" id="services">
+          <div class="section-aside"><p class="eyebrow">What we do</p></div>
+          <div class="service-list">
+            <div class="service-row">
+              <article class="service">
+                <img
+                  class="icon"
+                  src="assets/svg3004658893.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h2>Branding</h2>
+                <p>
+                  We craft compelling brand identities that leave a lasting impression.
+                </p>
+              </article>
+              <article class="service">
+                <img
+                  class="icon"
+                  src="assets/svg2651983205.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h2>Design</h2>
+                <p>Innovative and aesthetic designs that bring your ideas to life.</p>
+              </article>
+            </div>
+            <div class="service-row">
+              <article class="service">
+                <img
+                  class="icon"
+                  src="assets/svg2995212517.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h2>Branding</h2>
+                <p>
+                  Captivating visual storytelling that engages and resonates with your
+                  audience.
+                </p>
+              </article>
+              <article class="service">
+                <img
+                  class="icon"
+                  src="assets/svg3670196617.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h2>Design</h2>
+                <p>
+                  Engaging and persuasive content that captures attention and sparks
+                  meaningful connections.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured work: project images and captions -->
+        <section class="work split" id="work">
+          <div class="section-aside">
+            <div class="sticky">
+              <h2 class="section-title">Featured<br />Work</h2>
+              <p>
+                Showcasing our standout projects that blend creativity, strategy, and
+                cutting-edge design.
+              </p>
+              <a class="button" href="#projects">See All Work</a>
+            </div>
+          </div>
+          <div class="projects" id="projects">
+            <figure class="project">
+              <div class="image-frame">
+                <img
+                  src="assets/k5mnF05cnHOmE3fhp1gkKHmLGc.webp"
+                  alt="Dancing Stars — creative brand project"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                <h3>Dancing Stars</h3>
+                <span class="eyebrow">2023</span>
+              </figcaption>
+            </figure>
+            <figure class="project">
+              <div class="image-frame">
+                <img
+                  src="assets/1wdNE1kRFSX3dITLwUiw1YAEYsw.webp"
+                  alt="Enjoy Silence — creative brand project"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                <h3>Enjoy Silence</h3>
+                <span class="eyebrow">2023</span>
+              </figcaption>
+            </figure>
+            <figure class="project">
+              <div class="image-frame">
+                <img
+                  src="assets/9AwBmX967QwTRybsSzV72Ldoys.webp"
+                  alt="Pure Vision — creative brand project"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                <h3>Pure Vision</h3>
+                <span class="eyebrow">2023</span>
+              </figcaption>
+            </figure>
+            <figure class="project">
+              <div class="image-frame">
+                <img
+                  src="assets/B2vbH7ephcfzpD771EuVAnfDS2w.webp"
+                  alt="Boring Brand — creative brand project"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                <h3>Boring Brand</h3>
+                <span class="eyebrow">2023</span>
+              </figcaption>
+            </figure>
+            <figure class="project">
+              <div class="image-frame">
+                <img
+                  src="assets/QYy31ajrF9Pa85Ya3BY5C5Tys0.webp"
+                  alt="New Culture — creative brand project"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                <h3>New Culture</h3>
+                <span class="eyebrow">2023</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Studio: how we work -->
+        <section class="how" id="studio">
+          <div class="how-heading">
+            <div>
+              <p class="eyebrow">How we work</p>
+              <h2>We help our clients succeed with innovative strategies.</h2>
+            </div>
+            <img
+              class="how-symbol"
+              src="assets/svg9460868591.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="how-copy">
+            <p>
+              Through careful analysis, creative thinking, and a deep understanding of
+              their goals, we empower businesses to surpass expectations and thrive in
+              today's dynamic and competitive landscape.
+            </p>
+            <a class="button" href="#services">Our Services</a>
+          </div>
+        </section>
+
+        <!-- Values: team photo and principles -->
+        <section class="values">
+          <h2 class="section-title">Our Values</h2>
+          <div class="values-content">
+            <img
+              class="values-photo"
+              src="assets/dbPPgNBvteyJTwf4izKJFQuFGJ8.jpg"
+              alt="The Fylla creative team"
+              loading="lazy"
+            />
+            <div class="value-list">
+              <article class="value">
+                <span class="number">01</span>
+                <div>
+                  <h3>Vision</h3>
+                  <p>
+                    Our relentless pursuit of a shared vision fuels our creativity and
+                    propels us forward. With clarity and foresight, we craft strategies
+                    that align with our clients’ goals and aspirations, transforming their
+                    dreams into reality and shaping a future worth embracing.
+                  </p>
+                </div>
+              </article>
+              <article class="value">
+                <span class="number">02</span>
+                <div>
+                  <h3>Innovation</h3>
+                  <p>
+                    Innovation is at the core of everything we do. We embrace curiosity,
+                    explore uncharted territories, and challenge the status quo. By
+                    pushing boundaries and thinking outside the box, we create
+                    groundbreaking solutions that disrupt industries and inspire
+                    audiences.
+                  </p>
+                </div>
+              </article>
+              <article class="value">
+                <span class="number">03</span>
+                <div>
+                  <h3>Connection</h3>
+                  <p>
+                    We believe in the power of connection. We strive to build bridges
+                    between brands and their audiences, fostering genuine and lasting
+                    relationships. Through compelling storytelling and meaningful
+                    interactions, we create experiences that evoke emotions, strengthen
+                    bonds, and cultivate trust, ultimately turning customers into brand
+                    advocates.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact: call to action -->
+        <section class="contact" id="contact">
+          <div class="contact-heading">
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s bring<br />your brand to<br />the next level</h2>
+            </div>
+            <img
+              class="contact-symbol"
+              src="assets/svg11069714695.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="contact-copy">
+            <p>
+              Together, let's elevate your brand to new heights by unleashing its full
+              potential and captivating your target audience.
+            </p>
+            <a class="button" href="mailto:hello@fylla.com">Get in Touch</a>
+          </div>
+        </section>
+
+        <!-- News: latest articles -->
+        <section class="news" id="news">
+          <div class="news-heading">
+            <h2 class="section-title">Latest News</h2>
+            <a class="text-link" href="#articles">See All</a>
+          </div>
+          <div class="articles" id="articles">
+            <article class="article">
+              <div class="image-frame">
+                <img
+                  src="assets/rfHJDPb098V15ZhNZ4hNnXc28jA.webp"
+                  alt="Things to Look for When Comparing Branding Alternatives"
+                  loading="lazy"
+                />
+              </div>
+              <p class="eyebrow">Branding</p>
+              <h3>Things to Look for When Comparing Branding Alternatives</h3>
+            </article>
+            <article class="article">
+              <div class="image-frame">
+                <img
+                  src="assets/SHvefLN3asL08Ym9HA0kTgk.webp"
+                  alt="5 Stand-out Features of Branding You Should Know"
+                  loading="lazy"
+                />
+              </div>
+              <p class="eyebrow">Branding</p>
+              <h3>5 Stand-out Features of Branding You Should Know</h3>
+            </article>
+            <article class="article">
+              <div class="image-frame">
+                <img
+                  src="assets/f7pOHOgqMmCVM8ga1asI4DcH8.webp"
+                  alt="Branding: What Real Customers Have to Say"
+                  loading="lazy"
+                />
+              </div>
+              <p class="eyebrow">Branding</p>
+              <h3>Branding: What Real Customers Have to Say</h3>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer: navigation and credits -->
+      <footer>
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="logo" href="#home" aria-label="Fylla home"
+              ><img
+                class="logo-mark"
+                src="assets/svg12688193849.svg"
+                alt=""
+                aria-hidden="true" /><img
+                class="logo-word"
+                src="assets/svg11433201360.svg"
+                alt=""
+                aria-hidden="true"
+            /></a>
+            <p>Main Street. 1<br />22222 Berlin</p>
+            <div class="socials">
+              <a href="https://www.instagram.com/" aria-label="Instagram">IN</a
+              ><a href="https://www.pinterest.com/" aria-label="Pinterest">PI</a
+              ><a href="https://www.twitter.com/" aria-label="Twitter">TW</a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Pages</h3>
+              <a href="#home">Home</a><a href="#services">Services</a
+              ><a href="#studio">Studio</a><a href="#contact">Contact</a
+              ><a class="button" href="https://www.gola.io/">More Templates</a>
+            </div>
+            <div>
+              <h3>CMS</h3>
+              <a href="#work">Work</a><a href="#projects">Work Single</a
+              ><a href="#news">Blog</a><a href="#articles">Blog Single</a>
+            </div>
+            <div>
+              <h3>Utility Pages</h3>
+              <a href="#home">404 Error Page</a><a href="#home">Licensing</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© Made by <a href="https://www.gola.io/">Chat GPT with Plus Account</a></p>
+          <div><a href="#home">Privacy</a><a href="#home">Imprint</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
